@@ -10,10 +10,10 @@ const MobileMenu: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <MobileMenuContainer isOpen={isOpen}>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <CreateSongButton /> Add New
+        <CreateSongButton />
       </div>
-      <NavLink to="/">Songs</NavLink>
-      <NavLink to="/song-stats">Song Statistics</NavLink>
+      <NavLink to="/songs">Songs</NavLink>
+      <NavLink to="/song-stats">All Song</NavLink>
     </MobileMenuContainer>
   );
 };

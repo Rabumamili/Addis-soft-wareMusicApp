@@ -57,6 +57,7 @@ const waveTextStyle = css`
 const LogoItem: React.FC = () => {
   return (
     <div css={logoStyle}>
+      
       <span css={rhythmTextStyle}>Rhythm</span>
       <span css={waveTextStyle}>Wave</span>
     </div>

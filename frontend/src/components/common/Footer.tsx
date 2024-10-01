@@ -22,7 +22,7 @@ export const NavLink = styled.a`
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      Built by <NavLink href="https://github.com/Rabumamili">Rabuma M.</NavLink>
+      Built by: <NavLink href="https://github.com/Rabumamili" target="_blank" rel="noopener noreferrer"><span style={{ color: "#00FFFF" }}>Rabuma M.</span></NavLink>
     </FooterContainer>
   );
 };

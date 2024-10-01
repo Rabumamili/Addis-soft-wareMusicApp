@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoMdAdd } from "react-icons/io";
-import { Button } from "../../../assets/style/NavbarStyle";
+import { AddSongButton} from "../../../assets/style/NavbarStyle";
 import CreateSong from "../../CreateSong";
 import Modal from "../../Modal/Modal";
 
@@ -20,12 +20,12 @@ const CreateSongButton = () => {
 
   return (
     <>
-      <Button
+      <AddSongButton
         onClick={() => handleOpenModal(<CreateSong onClose={handleCloseModal} />)}
-        aria-label="Add a new song" // Accessibility enhancement
+      
       >
         <IoMdAdd /> Song
-      </Button>
+      </AddSongButton>
       <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}

@@ -19,7 +19,7 @@ const WelcomingPage: React.FC<WelcomingPageProps> = ({ onGetStarted }) => {
         Dive into a world of sound and let the rhythm guide you.
       </p>
       <GetStartedButton onClick={onGetStarted}>
-        START YOUR JOURNEY
+        GetStarted
         <span css={arrowStyle}>→</span>
       </GetStartedButton>
     </div>
@@ -110,8 +110,8 @@ const subtitleStyle = css`
 const GetStartedButton = styled.button`
   padding: 12px 24px;
   font-size: 1.1rem; /* Increased font size */
-  background-color: #F0D50C; /* Golden Yellow */
-  color: #000000; /* Black */
+  background-color: #F0D50C; /* Cool Golden Yellow */
+  color: #000000; /* Black for contrast */
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -122,7 +122,7 @@ const GetStartedButton = styled.button`
 
   &:hover {
     transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(240, 213, 12, 0.4);
+    box-shadow: 0px 4px 15px rgba(240, 213, 12, 0.4); /* Golden glow on hover */
     animation: pulse 0.5s infinite;
   }
 

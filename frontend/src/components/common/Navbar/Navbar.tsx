@@ -11,17 +11,21 @@ const Navbar: React.FC = () => {
 
   return (
     <NavbarContainer>
+      <NavLink to = "/">
       <LogoItem />
+      </NavLink>
+      
       <StyledButton onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <IoCloseSharp /> : <IoMenu />}
       </StyledButton>
       <Nav>
-        <CreateSongButton />
-        <NavLink to="/songs">
+        
+        <NavLink to="/songs" style={{ color: 'white', fontSize: '1.2em' }}>
           Songs
         </NavLink>
+        <CreateSongButton />
         <NavLink to="/song-stats">
-          Song Statistics
+          ALL Songs
         </NavLink>
       </Nav>
       <MobileMenu isOpen={isOpen} />
