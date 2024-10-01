@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "A backend for Fullstack Song APP",
+  "description": "A backend for the app",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FevenSeyfu/song-Mern-app.git"
+    "url": "git+https://github.com/Rabumamili/Addis-soft-wareMusicApp.git"
   },
   "keywords": [
     "MERN",
@@ -20,12 +20,11 @@
     "express",
     "docker"
   ],
-  "author": "FevenSeyfu",
+  "author": "Rabuma M",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FevenSeyfu/song-Mern-app/issues"
+  
   },
-  "homepage": "https://github.com/FevenSeyfu/song-Mern-app#readme",
+  "homepage": "https://github.com/Rabumamili/Addis-soft-wareMusicApp#readme",
   
   "dependencies": {
     "body-parser": "^1.20.2",
