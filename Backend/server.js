@@ -35,7 +35,7 @@ mongoose
 
 // Test route to confirm server is up
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Server is up and running" });
+  res.status(200).json({ message: "Server is up and running. Welcome to the Music App API!" });
 });
 
 // Song routes
