@@ -11,24 +11,7 @@ The Rhythm Wave allows users to create, update, and delete songs. This applicati
 - **Delete Songs**: Remove songs that are no longer part of your collection.
 - **Display Songs**: View a list of all songs in your collection with relevant details.
 
-## Screenshots
-
-Here are some screenshots showcasing the main features of the application:
-
-### Landing page
-![Screenshot 2024-10-01 052014](https://github.com/user-attachments/assets/4e3e7f1e-e442-4b2a-9026-95db320ed5e6)
-
-### View Songs
-![list of songs](https://github.com/user-attachments/assets/2f392259-c6fe-43e5-9670-36b9a35f01ce)
-
-### Create Song
-![create](https://github.com/user-attachments/assets/2a74f8b5-367f-4e77-add8-973099c7ea8d)
-
-### Update Song
-![Edited Title](https://github.com/user-attachments/assets/87d0aba1-3c8b-4177-a70c-88cc435a699e)
-
-### Delete Song
-![delete song](https://github.com/user-attachments/assets/70d1e70b-7ecc-4b42-94f8-8d77b5597b9a)
+ ### Check it out [here](https://rhytmwaveapp.vercel.app)
 
 ## Technologies Used
 
