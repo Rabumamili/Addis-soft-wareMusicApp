@@ -9,11 +9,11 @@ dotenv.config();
 
 const app = express();
 
+// Middleware
 app.use(express.json());
-
 app.use(
   cors({
-    origin: "*",
+    origin: "*", // Allow all origins, but you can restrict it to specific origins if needed
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["content-type"],
   })
@@ -39,5 +39,11 @@ app.get("/", (req, res) => {
 
 // Song routes
 app.use("/songs", SongRoutes);
+
+// **Port binding**:  
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 export default app;
