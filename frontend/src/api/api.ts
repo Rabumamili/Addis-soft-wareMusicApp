@@ -4,8 +4,7 @@
 
 import { Song } from "../types/types";
 import { NewSong } from "../types/types";
-const API_BASE_URL = "https://song-api-pncl.onrender.com/songs";
-
+const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 export const fetchSongsApi = async (): Promise<Song[]> => {
   const response = await fetch(`${API_BASE_URL}`);
   if (!response.ok) {
