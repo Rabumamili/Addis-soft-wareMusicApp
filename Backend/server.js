@@ -1,12 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import config from "./config/config.js"; // Assuming this has your MongoDB URI as an env variable
-import SongRoutes from './routes/SongRoutes.js';
+import dotenv from "dotenv";  
+import config from "./config/config.js"; // Fallback to config for MongoDB URI
+import SongRoutes from "./routes/SongRoutes.js"; // Song routes
+
+dotenv.config(); 
 
 const app = express();
 
-// Middleware for JSON and CORS
 app.use(express.json());
 
 app.use(
@@ -24,10 +26,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    const PORT = process.env.PORT || config.port || 5000; // Dynamic port for Vercel
-    app.listen(PORT, () => {
-      console.log(`Server is running on Port ${PORT}`);
-    });
+    console.log("Connected to MongoDB successfully");
   })
   .catch((err) => {
     console.log("MongoDB connection error: ", err);
@@ -39,6 +38,6 @@ app.get("/", (req, res) => {
 });
 
 // Song routes
-app.use('/songs', SongRoutes);
+app.use("/songs", SongRoutes);
 
 export default app;

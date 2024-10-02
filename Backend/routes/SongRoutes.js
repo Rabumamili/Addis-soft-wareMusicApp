@@ -1,7 +1,7 @@
 import express from 'express';
-const router = express.Router();
-import { createSong,listSongs,updateSong,removeSong,returnStatistics } from '../controllers/SongControllers.js';
 
+import { createSong,listSongs,updateSong,removeSong,returnStatistics } from '../controllers/SongControllers.js';
+const router = express.Router();
 router.get('/', listSongs)
 router.post('/', createSong)
 router.put('/:id',updateSong )

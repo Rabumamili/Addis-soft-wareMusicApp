@@ -5,7 +5,7 @@ export const createSong = async (req, res) => {
   const { title, artist, album, genre } = req.body;
   try {
     if (!title || !artist || !album || !genre) {
-      return response.status(400).json({
+      return res.status(400).json({
         success: false,
         message: "send all required fields:title,artist,album,genre ",
       });
