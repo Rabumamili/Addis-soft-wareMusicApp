@@ -5,7 +5,7 @@ import { Song } from "../types/types";
 import { RootState } from "../app/store";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
-import { FaSpinner } from "react-icons/fa6";
+import ReactLoading from 'react-loading'; 
 import Modal from "./Modal/Modal";
 import UpdateSong from "./UpdateSong";
 import DeleteSong from "./DeleteSong";
@@ -91,15 +91,18 @@ const ListSongs: React.FC = () => {
           }}
         />
         {isLoading ? (
-          <Text
-            fontWeight="bold"
-            textAlign={"center"}
-            fontSize={"1.5rem"}
+          <Flex
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
             marginY={"10%"}
           >
-            <FaSpinner />
-            Loading...
-          </Text>
+            {/* Using ReactLoading spinner */}
+            <ReactLoading type="spin" color="#535C91" height={60} width={60} />
+            <Text fontWeight="bold" fontSize={"1.5rem"} marginTop="1rem">
+              Loading...
+            </Text>
+          </Flex>
         ) : (
           currentSongs.map((song: Song) => {
             return (
@@ -178,6 +181,7 @@ const ListSongs: React.FC = () => {
         })}
       </Flex>
     </Layout>
-  )};
+  );
+};
 
 export default ListSongs;
