@@ -17,7 +17,7 @@ The Rhythm Wave allows users to create, update, and delete songs. This applicati
 
 - **Frontend**: React,ReduxToolkit,ReduxSaga, emotion and styled system
 - **Backend**: Node.js, Express
-- **Database**: MongoDB (or any other database you are using)
+- **Database**: MongoDB 
 
 ## Installation
 
@@ -25,12 +25,12 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Rabumamili/Addis-soft-wareMusicApp/ 
    ```
 
 2. **Navigate to the project directory**:
    ```
-   cd RhythmWave
+   cd Addis-soft-wareMusicApp
    ```
 
 3. **Install dependencies**:
